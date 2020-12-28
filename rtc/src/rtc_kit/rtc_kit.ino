@@ -7,7 +7,7 @@
 #define SCREEN_HEIGHT    64    // OLED display height, in pixels
 
 #define OLED_RESET    4
-Adafruit_SSD1306 display(OLED_RESET);
+Adafruit_SSD1306 display(SCREEN_WIDTH,SCREEN_HEIGHT,&Wire,OLED_RESET,400000UL,100000UL);
 
 #define button1    9          // Button B1 is connected to Arduino pin 9
 #define button2    8          // Button B2 is connected to Arduino pin 8
